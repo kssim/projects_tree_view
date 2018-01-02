@@ -5,11 +5,12 @@ propagates the tree view to the project show page's subprojects list.
 
 ==Author
 
-* Chris Peterson
+* Original : Chris Peterson
+* Modified : KyeongSeob Sim
 
 == Contributor
 * Anton-zaytsev
-* Shadowbq 
+* Shadowbq
 * cforce
 * danmunn
 ==Changelog
@@ -24,7 +25,7 @@ The currently available, latest stable release of the plugin is version <b>0.0.6
 
 This plugin is compatible with Redmine trunk only!
 
-==Obtaining 
+==Obtaining
 
 <i>URL of the GitHub repository: http://github.com/shadowbq/projects_tree_view/tree/master</i>
 
@@ -59,6 +60,7 @@ This plugin is open-source and licensed under the "GNU General Public License v2
 
 * (C)2009, Chris Peterson
 * (C)2009, Mischa The Evil
+* (C)2017, KyeongSeob Sim
 
 ==Support
 

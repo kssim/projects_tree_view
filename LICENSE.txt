@@ -1,7 +1,8 @@
 Projects Tree View is a Redmine plugin which will turn the projects page into a tree view.
- 
+
 Copyright (C) 2009 Chris Peterson
 Copyright (C) 2009 Mischa The Evil
+Copyright (C) 2017 KyeongSeob Sim
 
 
 This program is free software; you can redistribute it and/or
