@@ -18,6 +18,7 @@ Redmine::Plugin.register :projects_tree_view do
   requires_redmine :version_or_higher => '3.0.0'
 
   settings :default => {
-    'show_project_progress' => true
+    'show_project_progress' => true,
+    'project_view_default_expand' => true
   }, :partial => 'settings/project_tree_settings'
 end

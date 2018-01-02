@@ -19,6 +19,8 @@
 
 <table class="list">
   <% show_project_progress = Setting.plugin_projects_tree_view['show_project_progress'] %>
+  <% project_view_default_expand = Setting.plugin_projects_tree_view['project_view_default_expand'] %>
+  <% project_view_mode = project_view_default_expand ? "open" : "hide" %>
   <thead>
     <tr>
       <th><%= l(:label_project)%></th>
@@ -37,7 +39,7 @@
       <% project_id = "%04d" % project.id %>
       <%  (plevel - level).times { ancestors.pop } if (level < plevel) %>
       <% has_children = !project.children.empty? %>
-      <tr id="<%= project_id %>" class="<%= project.css_classes %> <%= level > 0 ? "hide #{ancestors.last}" : cycle("odd", "even") %>">
+      <tr id="<%= project_id %>" class="<%= project.css_classes %> <%= level > 0 ? project_view_mode + " #{ancestors.last}" : cycle("odd", "even") %>">
         <td class="name" style="padding-left: <%= 18 * level %>px">
           <% if has_children %>
             <span class="expander" onclick="toggleShowHide(<%= "'#{project_id}'" %>)">&nbsp;</span>
